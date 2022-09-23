@@ -63,9 +63,9 @@ When this software checks the balance of an address that the user has specified,
 
 On the other hand, if a wallet that has a balance is discovered, all of the pertinent information about that wallet will be written down and stored in the text file known as "success.txt." Here's an example:
 
->Wallet Address: 1Kz2CTvjzkZ3p2BQb5x5DX6GEoHX2jFS45
->Public Key: 04393B30BC950F358326062FF28D194A5B28751C1FF2562C02CA4DFB2A864DE63280CC140D0D540EA1A5711D1E519C842684F42445C41CB501B7EA00361699C320
->Private Key (Hex): 5A4F3F1CAB44848B2C2C515AE74E9CC487A9982C9DD695810230EA48B1DCEADD
+>Wallet Address: 1Kz2CTvjzkZ3p2BQb5x5DX6GEoHX2jFS45<br/>
+>Public Key: 04393B30BC950F358326062FF28D194A5B28751C1FF2562C02CA4DFB2A864DE63280CC140D0D540EA1A5711D1E519C842684F42445C41CB501B7EA00361699C320<br/>
+>Private Key (Hex): 5A4F3F1CAB44848B2C2C515AE74E9CC487A9982C9DD695810230EA48B1DCEADD<br/>
 >Private Key (WIF): 5JW4RCAXDbocFLK9bxqw5cbQwuSn86fpbmz2HhT9nvKMTh68hjm
 
 # Memory Consumption
