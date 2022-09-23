@@ -18,7 +18,7 @@
 
 Bitscanner is a Bitcoin wallet collider that use brute force to do transactions on random wallet addresses in an effort to detect a wallet containing money. It does this by simultaneously completing transactions on an enormous number of wallets. This is done in an effort to locate a wallet or other container carrying money. It should not be considered more than a proof-of-concept at this moment owing to the remote possibility that it may connect to a bitcoin wallet. The likelihood of it being linked to a Bitcoin wallet is low, hence it was just created for educational purposes.
 
-![image](https://user-images.githubusercontent.com/6468571/191934764-3f742985-f067-4b91-9034-70cabf456b28.png)
+![image](https://user-images.githubusercontent.com/6468571/191935471-7c9126a1-8c3e-4b5d-b7e7-c888930f5a8a.png)
 
 Given that Bitcoin wallet addresses are created randomly, it is possible for two wallets to seem to have identical addresses. However, this is not the case. The owners of both wallets would have access to and be able to spend the same amount of money if this were the case. Alternatively, the opposite is true. Each Bitcoin wallet has a unique address. Shocking? Please do not get your expectations up, since the probability of this occurring is rather low. You will be notified when this content becomes available. Consider the likelihood that a similar situation may occur in the future. Bitcoin users have access to a maximum of 2^160 addresses at any one time.
 
