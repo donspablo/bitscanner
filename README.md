@@ -10,6 +10,10 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/6468571/191124256-20415448-9bd5-4879-bfff-cca988bd7bfa.png"></img></p>
 
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
+  
+![image](https://user-images.githubusercontent.com/6468571/191932704-9af9e989-3b2d-4ba9-8222-0eacba2428a0.png)
+
 # Bitscanner Bitcoin Brute Forcer
 
 Bitscanner is a Bitcoin wallet collider that use brute force to do transactions on random wallet addresses in an effort to detect a wallet containing money. It does this by simultaneously completing transactions on an enormous number of wallets. This is done in an effort to locate a wallet or other container carrying money. It should not be considered more than a proof-of-concept at this moment owing to the remote possibility that it may connect to a bitcoin wallet. The likelihood of it being linked to a Bitcoin wallet is low, hence it was just created for educational purposes.
@@ -18,6 +22,8 @@ Given that Bitcoin wallet addresses are created randomly, it is possible for two
 
 When the address generator is configured to generate addresses at random, statistical analysis may be used to determine the possibility that two distinct wallets would create the same address. This is possible when the address generator is configured to generate addresses at random. This is theoretically conceivable if the generator is configured to produce random addresses. Please read the following article to enhance your mathematics knowledge.Therefore, the possibility of an address collision, often known as your wallet randomly producing the same address as another wallet, is 1 in 6.35.10^24, which is very low. This indicates that the probability of address information inconsistency is rather low. However, the reason for such a large number is unknown.
 
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
+  
 ![image](https://user-images.githubusercontent.com/6468571/191932200-510fc47a-144b-430d-90f4-270c21b61f24.png)
 
 # Dependencies
@@ -28,6 +34,7 @@ Python modules listed in the <a href="/requirements.txt">requirements.txt<a/>
   
 Minimum <a href="#memory-consumption">RAM requirements</a>
 
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
   
 ![image](https://user-images.githubusercontent.com/6468571/191932169-de9d284b-99b0-4ebf-9457-b818e0f60644.png)
   
@@ -39,6 +46,8 @@ $ git clone https://github.com/donspablo/bitscanner.git bitscanner
 $ cd bitscanner && pip3 install -r requirements.txt
 ```
 
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
+  
 ![image](https://user-images.githubusercontent.com/6468571/191932282-5a0c5d01-6f0e-4109-a645-824db984c1fb.png)
   
 # Quick Start
@@ -46,8 +55,9 @@ $ cd bitscanner && pip3 install -r requirements.txt
 ```
 $ python3 bitscanner.py
 ```
-  
 
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
+  
 ![image](https://user-images.githubusercontent.com/6468571/191932038-af702f81-a93c-4c0f-a01d-e1d4d802d417.png)
 
 # How-it-works
@@ -57,6 +67,7 @@ Using the os.urandom() method to generate private keys provides a high level of 
 
 The establishment of a database comprising all precalculated P2PKH Bitcoin addresses and the corresponding amount of cash is a significant aspect of this project. This database includes Bitcoin addresses for the P2PKH project. Detailed information on each of the addresses is provided below. If the newly formed address includes a balance, the private key, public key, and wallet address are placed in the text file "success.txt" on the user's hard drive. Only if the freshly formed address has a balance is this true. Even if it finds out that the questioned address is cashless, the transaction will proceed routinely. This occurrence occurs immediately after a database search for the newly created address has been finished. Only if the given address has an outstanding balance will this occur. This application employs parallel computing to do computations in parallel. In specifically, the questioned function leverages parallel processing "parallel processing Process()."
 
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
   
 ![image](https://user-images.githubusercontent.com/6468571/191932340-f87787bb-1d24-4e08-8330-eaf54910fdb0.png)
   
@@ -66,6 +77,7 @@ Private keys, also known as secret numbers, are required to spend bitcoins. Priv
 
 This piece of software is fundamentally an algorithm for making educated guesses using brute force. This is achieved by continuously generating Bitcoin private keys at random, converting them into their respective wallet addresses, and then checking the balance of each wallet address. This is referred to as "mining." When a wallet's balance is confirmed, the user's private key, public key, and wallet address are stored on their local hard drive in a text file named "success.txt." This file is accessed each time the wallet is rescanned. This file is accessed during the examination of a wallet containing a balance. The ultimate objective is to devise a method for generating random numbers in order to choose one of the 2160 possible wallets with a positive balance. Currently, there are 2160 wallets available, bringing the total number of wallets that can be used to 2160.
 
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
   
 ![image](https://user-images.githubusercontent.com/6468571/191932383-33ca88b7-58ea-4518-8f14-4a151de46a05.png)
   
@@ -80,6 +92,7 @@ On the other hand, if a wallet that has a balance is discovered, all of the pert
 >Private Key (Hex): 5A4F3F1CAB44848B2C2C515AE74E9CC487A9982C9DD695810230EA48B1DCEADD<br/>
 >Private Key (WIF): 5JW4RCAXDbocFLK9bxqw5cbQwuSn86fpbmz2HhT9nvKMTh68hjm
   
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
   
 ![image](https://user-images.githubusercontent.com/6468571/191932442-1122a469-f9e4-4d5c-b451-3bbf0f317848.png)
 
@@ -87,7 +100,8 @@ On the other hand, if a wallet that has a balance is discovered, all of the pert
 
 This application requires around 2 GB per CPU of random access memory (RAM). Due to the software's use of multiprocessing, it is hard to establish how much RAM it really needs. We kept a careful eye on this piece of software while it tried to brute-force identify 10,000 addresses on a system that had four logical processors and eight gigabytes of memory. The stack trace for memory use may now be produced as a direct result of this issue, which means that it is now possible to do so. As a direct consequence of this, there are now four child processes, and the amount of random access memory (RAM) required by each is around 2 gigabytes (RAM).
 
-
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
+  
 ![image](https://user-images.githubusercontent.com/6468571/191932535-05992ad0-52d2-4c76-be47-feebdae50b97.png)
  
 # Script Efficiency
@@ -96,6 +110,7 @@ It takes `0.0032457721` seconds for this progam to brute force a __single__ Bitc
 
 However, through `multiprocessing.Process()` a concurrent process is created for every CPU your computer has. So this program can brute force addresses at a speed of `0.0032457721 ÷ cpu_count()` seconds.
   
+![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
   
 ![image](https://user-images.githubusercontent.com/6468571/191932612-d21f7b5a-ed13-45f4-ba9c-f2bd8243c27c.png)
 
