@@ -33,15 +33,15 @@ Minimum <a href="#memory-consumption">RAM requirements</a>
 # Installation
 
 ```
-$ git clone https://github.com/donspablo/Bitscanner.git Bitscanner
+$ git clone https://github.com/donspablo/bitscanner.git bitscanner
 
-$ cd Bitscanner && pip3 install -r requirements.txt
+$ cd bitscanner && pip3 install -r requirements.txt
 ```
 
 # Quick Start
 
 ```
-$ python3 Bitscanner.py
+$ python3 bitscanner.py
 ```
 
 # How It Works
