@@ -53,28 +53,28 @@ def Z(private_key, public_key, address, database):
     if B in C[0] or B in C[1] or B in C[2] or B in C[3]:
         with I("success.txt", H) as E:
             E.write(
-                G + F
-                + A(B) + F
+                A(G) + A(F)
+                + A(B) + A(F)
                 + "Public Key: "
-                + A(J) + F
+                + A(J) + A(F)
                 + "Private Key (Hex): "
-                + A(D) +F
+                + A(D) + A(F)
                 + "Private Key (WIF): "
                 + A(S(D))
-                + F + F
+                + A(F) + A(F)
             )
     else:
         with I("failed.txt", H) as E:
             E.write(            
-                + G + F
-                + A(B) + F
+                A(G) + A(F)
+                + A(B) + A(F)
                 + "Public key: "
-                + A(J) + F
+                + A(J) + A(F)
                 + "Private Key (Hex): "
-                + A(D) + F
+                + A(D) + A(F)
                 + "Private Key (WIF): "
                 + A(S(D))
-                + F + F
+                + A(F) + A(F)
             )
 
 
