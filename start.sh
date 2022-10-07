@@ -67,6 +67,10 @@ echo " ██╔══██╗██║░░░██║░░░░╚══�
 echo " ██████╦╝██║░░░██║░░░██████╔╝╚█████╔╝██║░░██║██║░╚███║██║░╚███║███████╗██║░░██║"
 echo " ╚═════╝░╚═╝░░░╚═╝░░░╚═════╝░░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝░░╚══╝╚══════╝╚═╝░░╚═╝"
 echo ""
+echo " note: locate your memcache process when memory reaches 4.1GB scan begins"
+echo " windows: press + hold the win, shift + esc to load Task Manager"
+echo " linux: run 'top' in the terminal to see your system processes"
+echo ""
 BLA::start_loading_animation "${BLA_pong[@]}" "Scaning"
 python ./bitscanner.py || python2 ./bitscanner.py || python3 ./bitscanner.py &> /dev/null
 BLA::stop_loading_animation
