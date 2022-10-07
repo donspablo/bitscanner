@@ -151,11 +151,6 @@ def w(keys_list):
                 H.write(E(A))
         print(F.now().strftime(R))
         print("GOT ONE")
-    else:
-        with k("missed.txt", "a") as H:
-            for C in A:
-                H.write(E(G))
-                H.write(E(A))
 
 
 def x(test_1_s, test_2_s):

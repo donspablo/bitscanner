@@ -40,7 +40,7 @@ if pidof -o %PPID -x -- "$0" >/dev/null; then
   exit 1
 fi
 cd "$(dirname "$0")"
-sh ./stop.sh
+#sh ./stop.sh
 clear
 echo ""
 echo " 🏁 Checking requirements..."
