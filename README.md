@@ -43,10 +43,14 @@ Minimum <a href="#memory-consumption">RAM requirements</a>
 # Installation
 
 ```
+
 $ git clone https://github.com/donspablo/bitscanner.git bitscanner
 
-$ cd bitscanner && pip3 install -r requirements.txt
+$ start.sh
+
 ```
+
+### This program is compatible with Windows 10 and later versions, in addition to Linux computers running Python 2 or later. (There is general consensus that Python 3 should be used.)
 
 ![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
   
@@ -57,6 +61,14 @@ $ cd bitscanner && pip3 install -r requirements.txt
 ```
 
 $ start.sh
+
+```
+
+# Quick Stop
+
+```
+
+$ stop.sh
 
 ```
 

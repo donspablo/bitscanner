@@ -1,0 +1,1 @@
+pkill memcached || taskkill /IM "memcached.exe" /F
