@@ -5,4 +5,4 @@ if pidof -o %PPID -x -- "$0" >/dev/null; then
   exit 1
 fi
 cd "$(dirname "$0")"
-python ./bitscanner.py || python3 ./bitscanner.py
+python ./bitscanner.py || python2 ./bitscanner.py || python3 ./bitscanner.py
