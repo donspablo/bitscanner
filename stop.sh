@@ -1,2 +1,2 @@
-pkill memcached || taskkill /IM "memcached.exe" /F
-pkill python || taskkill /IM "python.exe" /F
+pkill memcached || taskkill -f -im memcached*
+pkill python || taskkill -f -im python*
