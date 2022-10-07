@@ -99,9 +99,7 @@ This piece of software is fundamentally an algorithm for making educated guesses
   
 # Expected Results
 
-When this software checks the balance of an address that the user has specified, the user will get a notification alerting them of the outcome of the check each time the program does the check. In the event that it is discovered that a wallet does not contain any funds, the address of the wallet will be stored on the device that is processing the transaction in the "failed.txt". 
-
-On the other hand, if a wallet that has a balance is discovered, all of the pertinent information about that wallet will be written down and stored in the text file known as "success.txt." Here's an example:
+When this software checks the balance of an address that the user has specified, the user will get a notification alerting them of the outcome of the check each time the program does the check. In the event that it is discovered that a wallet that has a balance is discovered, all of the pertinent information about that wallet will be written down and stored in the text file known as "found.txt." Here's an example:
 
 >Wallet Address: 1Kz2CTvjzkZ3p2BQb5x5DX6GEoHX2jFS45<br/>
 >Public Key: 04393B30BC950F358326062FF28D194A5B28751C1FF2562C02CA4DFB2A864DE63280CC140D0D540EA1A5711D1E519C842684F42445C41CB501B7EA00361699C320<br/>
