@@ -55,7 +55,9 @@ $ cd bitscanner && pip3 install -r requirements.txt
 # Quick Start
 
 ```
-$ python3 bitscanner.py
+
+$ start.sh
+
 ```
 
 ![image](https://user-images.githubusercontent.com/6468571/191933932-3a94e4fe-2f2c-40c7-934e-4d3b7bd3c8ab.png)
