@@ -16,7 +16,6 @@ N = ""
 O = " "
 J = open
 G = str
-A = print
 c = b"get_misses"
 d = b"reclaimed"
 g = b"evictions"
@@ -30,7 +29,6 @@ K = N
 L = int
 H = Z
 E = G
-D = A
 m = Q.Client((U, 11211))
 n = L(b.cpu_count() / 2)
 o = 32
@@ -145,14 +143,14 @@ def w(keys_list):
         B.append(C[4])
     G = m.get_multi(B)
     if G:
-        D(G)
-        D(A)
+        print(G)
+        print(A)
         with k("found.txt", "a") as H:
             for C in A:
                 H.write(E(G))
                 H.write(E(A))
-        D(F.now().strftime(R))
-        D("GOT ONE")
+        print(F.now().strftime(R))
+        print("GOT ONE")
 
 
 def x(test_1_s, test_2_s):
@@ -165,22 +163,22 @@ def x(test_1_s, test_2_s):
 
 
 def y():
-    D("available threads: " + E(n))
+    print("available threads: " + E(n))
     B = 0
     C = k(T, S)
     G = C.readline().strip()
     H = C.readline().strip()
     C.close()
-    D("sanities: " + G + h + H)
-    D(F.now().strftime(R))
+    print("sanities: " + G + h + H)
+    print(F.now().strftime(R))
     while B < n:
-        D("thread spawned: " + E(B))
+        print("thread spawned: " + E(B))
         B = B + 1
         b.Process(target=x, args=(G, H)).start()
     while i:
         time.sleep(15)
         A = m.stats()
-        D(
+        print(
             "\r "
             + F.now().strftime(R)
             + "  evictions: "
@@ -192,46 +190,45 @@ def y():
             + " Misses: "
             + E(A.get(c))
             + " MPS: "
-            + E(Y(A.get(c) / A.get(b"uptime"), 2)),
-            end=h,
+            + E(Y(A.get(c) / A.get(b"uptime"), 2))
         )
         if A.get(g) > 0 or A.get(d) > 0:
-            D("!!! ERRORR !!!")
+            print("!!! ERRORR !!!")
 
 
 def t():
     C = "data/"
-    A("loading memcached...")
+    print("loading memcached...")
     D = Q.Client((r, 11211))
-    A("uploading data...")
-    A(F.now().strftime(M))
+    print("uploading data...")
+    print(F.now().strftime(M))
     b = Z(os.listdir(C))
     H = D.get_multi([q, p])
     if H:
-        A("test check pass")
+        print("test check pass")
     else:
         for (c, d) in e(os.listdir(C)):
-            A("\rreading data: " + G(c + 1) + "/" + G(b), end=O)
+            print("\rreading data: " + G(c + 1) + "/" + G(b))
             with J(C + d, "rb") as f:
                 R = u.load(f)
                 D.set_multi(X.fromkeys(R, 1), expire=0)
             R = []
-        A("data loaded!")
-        A(F.now().strftime(M))
+        print("data loaded!")
+        print(F.now().strftime(M))
         H = D.get_multi([p, q])
         if H:
-            A("testing passed!")
+            print("testing passed!")
         else:
-            A("testing failed!")
+            print("testing failed!")
     C = "data/data.txt"
     g = a.randint(0, 34000000)
     h = a.randint(0, 34000000)
     K = N
     L = N
-    A("connect memcached...")
+    print("connect memcached...")
     D = Q.Client((r, 11211))
-    A("Loading and injecting data")
-    A(F.now().strftime(M))
+    print("Loading and injecting data")
+    print(F.now().strftime(M))
     i = time.time()
     E = 0
     B = J(C, S)
@@ -248,13 +245,13 @@ def t():
             if E == h:
                 L = P.rstrip(I)
         D.set_multi(X.fromkeys(U, 1), expire=0)
-        A("\raddresses: " + G(E), end=O)
+        print("\raddresses: " + G(E))
     B.close()
     j = time.time()
     k = j - i
-    A("DATA LOADED: Addresses loadeded in " + G(Y(k, 2)) + " seconds!")
-    A("test 1: " + K + " test 2: " + L)
-    A(F.now().strftime(M))
+    print("DATA LOADED: Addresses loadeded in " + G(Y(k, 2)) + " seconds!")
+    print("test 1: " + K + " test 2: " + L)
+    print(F.now().strftime(M))
     B = J(T, "w")
     B.write(K + I)
     B.write(L + I)
